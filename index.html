@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Новини Дня</title>
+    <title>Газета тижня</title>
     <style>
         * {
             margin: 0;
@@ -54,6 +54,13 @@
             padding: 20px;
         }
 
+        .section-title {
+            font-size: 28px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
         .news {
             display: flex;
             flex-wrap: wrap;
@@ -90,50 +97,92 @@
             color: white;
             text-align: center;
             padding: 10px;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Новини Дня</h1>
+        <h1>Газета тижня</h1>
     </header>
 
     <nav>
         <ul>
-            <li><a href="#">Головна</a></li>
-            <li><a href="#">Політика</a></li>
-            <li><a href="#">Економіка</a></li>
-            <li><a href="#">Спорт</a></li>
-            <li><a href="#">Контакти</a></li>
+            <li><a href="#politika">мєми</a></li>
+            <li><a href="#ekonomika">тг канали</a></li>
+            <li><a href="#sport">цікавинки</a></li>
         </ul>
     </nav>
 
-    <div class="container">
+    <!-- Політика -->
+    <div class="container" id="politika">
+        <h2 class="section-title">мєми</h2>
         <div class="news">
             <div class="news-item">
-                <img src="news1.jpg" alt="Новина 1">
-                <h2>Джокєр прікаліст</h2>
-               <p></p>
-               <img src="https://github.com/ValeriiTP/news/blob/main/Jokerpidr.jpg?raw=true">
-            </div>
-            <div class="news-item">
-                <img src="news2.jpg" alt="Новина 2">
-                <h2>2</h2>
+                <img src="https://example.com/image1.jpg" alt="Новина 1">
+                <h2>Джокєр прикаліст</h2>
                 <p></p>
+                <img src="https://github.com/ValeriiTP/news/blob/main/Jokerpidr.jpg?raw=true">
             </div>
             <div class="news-item">
-                <img src="news3.jpg" alt="Новина 3">
+                <img src="https://example.com/image2.jpg" alt="Новина 2">
+                <h2>2</h2>
+                <p>2</p>
+            </div>
+            <div class="news-item">
+                <img src="https://example.com/image3.jpg" alt="Новина 3">
                 <h2>3</h2>
                 <p>3</p>
             </div>
         </div>
     </div>
 
+    <!-- Економіка -->
+    <div class="container" id="ekonomika">
+        <h2 class="section-title">тг канали</h2>
+        <div class="news">
+            <div class="news-item">
+               
+                <h2>канал з цікавою історією від Вікоф:</h2>
+                <p><a href="https://t.me/lelilasfromelis">Story from pari</a></p>
+            </div>
+            <div class="news-item">
+                
+                <h2>канал про мапи в час війни від Делікса:</h2>
+                <p><a href="https://t.me/dymkuvsluh">бій за Україну</a></p>
+            </div>
+            <div class="news-item">
+              
+                <h2>канал з душевними віршами від Еудженіо:</h2>
+                <p><a href="https://t.me/dymkuvsluh">Думки на вітер</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Спорт -->
+    <div class="container" id="sport">
+        <h2 class="section-title">цікавинки</h2>
+        <div class="news">
+            <div class="news-item">
+                <img src="https://example.com/image7.jpg" alt="Новина 7">
+                <h2>1</h2>
+                <p>1</p>
+            </div>
+            <div class="news-item">
+                <img src="https://example.com/image8.jpg" alt="Новина 8">
+                <h2>2</h2>
+                <p>2</p>
+            </div>
+            <div class="news-item">
+                <img src="https://example.com/image9.jpg" alt="Новина 9">
+                <h2> 3</h2>
+                <p>3</p>
+            </div>
+        </div>
+    </div>
+
     <footer>
-        <p>&copy; 2024 новини коханця. Всі права захищені</p>
+        <p>&copy; 2024 Газета коханця. Всі права захищені.</p>
     </footer>
 </body>
 </html>
